@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
 * {
   box-sizing: border-box;
 }
 
 body {
+  font-family: 'Roboto Slab', serif;
   margin: 0;
 }
 
@@ -53,107 +55,6 @@ body {
 
 .col-12 {
   width: 100%;
-}
-
-.col {
-  width: 100%;
-  float: none;
-}
-
-.col-1 {
-  width: calc((100%/12)*1);
-}
-
-.col-offset-1 {
-  margin-left: calc((100%/12)*1);
-}
-
-.col-2 {
-  width: calc((100%/12)*2);
-}
-
-.col-offset-2 {
-  margin-left: calc((100%/12)*2);
-}
-
-.col-3 {
-  width: calc((100%/12)*3);
-}
-
-.col-offset-3 {
-  margin-left: calc((100%/12)*3);
-}
-
-.col-4 {
-  width: calc((100%/12)*4);
-}
-
-.col-offset-4 {
-  margin-left: calc((100%/12)*4);
-}
-
-.col-5 {
-  width: calc((100%/12)*5);
-}
-
-.col-offset-5 {
-  margin-left: calc((100%/12)*5);
-}
-
-.col-6 {
-  width: calc((100%/12)*6);
-}
-
-.col-offset-6 {
-  margin-left: calc((100%/12)*6);
-}
-
-.col-7 {
-  width: calc((100%/12)*7);
-}
-
-.col-offset-7 {
-  margin-left: calc((100%/12)*7);
-}
-
-.col-8 {
-  width: calc((100%/12)*8);
-}
-
-.col-offset-8 {
-  margin-left: calc((100%/12)*8);
-}
-
-.col-9 {
-  width: calc((100%/12)*9);
-}
-
-.col-offset-9 {
-  margin-left: calc((100%/12)*9);
-}
-
-.col-10 {
-  width: calc((100%/12)*10);
-}
-
-.col-offset-10 {
-  margin-left: calc((100%/12)*10);
-}
-
-.col-11 {
-  width: calc((100%/12)*11);
-}
-
-.col-offset-11 {
-  margin-left: calc((100%/12)*11);
-}
-
-.col-12 {
-  width: calc((100%/12)*12);
-}
-
-.col-offset-12 {
-  margin-left: calc((100%/12)*12);
 }
 
 .container {
@@ -222,8 +123,8 @@ header > nav ul > li > a:hover {
   float: right;
   max-width: 550px;
   margin-top: 80px;
-  margin-right: -100px;
-  padding: 10px 80px 20px 10px;
+  margin-right: -50px;
+  padding: 30px 60px 60px 40px;
   position: relative;
 }
 
@@ -378,7 +279,7 @@ section.gallery .gallery-img:hover .layer {
 }
 
 section.gallery .layer i {
-  padding: 10px;
+  padding: 50px;
   color: #fff;
   font-size: 35px;
   position: relative;
@@ -420,7 +321,7 @@ section.gallery .layer i {
 .picture {
   margin-top: 50px;
   width: 100%;
-  background-image: url(https://images.unsplash.com/photo-1507561684756-16b6bb603fa6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=12e3fe2b3427d0440735d2ba0bcddb5f&auto=format&fit=crop&w=1350&q=80);
+  background-image: url(https://images.unsplash.com/photo-1550684376-efcbd6e3f031?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
   background-size: cover;
   background-position: center;
 }
@@ -529,43 +430,6 @@ footer {
 
 .foot .get-in-touch .monitor1 div {
   padding-top: 0;
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  header {
-    background: none;
-  }
-  img {
-    display: none;
-  }
-  nav ul {
-    background-color: black;
-    float: none;
-    display: block;
-  }
-  header > nav ul > li {
-    display: block;
-    text-align: center;
-    font-size: 14px;
-    text-decoration-line: underline;
-    letter-spacing: 2px;
-  }
-  header > nav ul > li > a {
-    line-height: 40px;
-    display: block;
-    color: #fff;
-  }
-  header > nav ul > li > a:hover {
-    background: none;
-  }
-  .slogan {
-    display: none;
-  }
-  /* Benefits */
-  .benefits {
-    display: none;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
