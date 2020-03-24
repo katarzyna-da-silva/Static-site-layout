@@ -81,4 +81,4 @@ typings/
 .dynamodb/
 
 # VScode files
-.vscode/
+*vscode/
