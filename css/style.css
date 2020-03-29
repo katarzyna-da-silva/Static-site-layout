@@ -563,7 +563,7 @@ footer {
   }
   .workers h3 {
     text-align: center;
-    padding: 0;
+    padding: 25px 0 0 0;
     font-size: 18px;
   }
   .worker img {
@@ -595,13 +595,13 @@ footer {
   .picture h1 {
     text-align: center;
     color: white;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 28px;
     text-transform: uppercase;
   }
   .picture .text p {
     color: white;
-    padding: 15px 15px 5px 15px;
+    padding: 15px 15px 20px 15px;
     text-align: left;
     margin: 10px;
   }
@@ -643,10 +643,10 @@ footer {
     text-align: center;
   }
   .social-media {
-    margin: 5px 25px 5px 25px;
+    margin: 5px 20px 5px 20px;
   }
   .foot .get-in-touch p {
-    margin: 5px 25px 5px 25px;
+    margin: 5px 15px 5px 25px;
   }
 }
 
