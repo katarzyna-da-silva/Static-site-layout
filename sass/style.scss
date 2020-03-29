@@ -8,6 +8,7 @@ body {
     font-family: 'Oswald', sans-serif;
     margin: 0; 
 }
+
 .row::before,
 .row::after {
 	content:"";
@@ -205,9 +206,8 @@ body {
             font-size: 16px;
         }
     }
-    
+
     /*galeria*/
-    
     .gallery-img {
         height: 30vh;
         width: 100%;
@@ -439,4 +439,269 @@ body {
 
     .foot .get-in-touch .monitor1 div {
         padding-top: 0;
+    }
+
+    /* Media queries */ 
+
+    @media(max-width: 767px) {
+    
+/* Grid */
+.col-s-1 {
+    width: 8.33%;
+}
+
+.col-s-2 {
+    width: 16.66%;
+}
+
+.col-s-3 {
+    width: 25%;
+}
+
+.col-s-4 {
+    width: 33.33%;
+}
+
+.col-s-5 {
+    width: 41.66%;
+}
+
+.col-s-6 {
+    width: 50%;
+}
+
+.col-s-7 {
+    width: 58.33%;
+}
+
+.col-s-8 {
+    width: 66.66%;
+}
+
+.col-s-9 {
+    width: 75%;
+}
+
+.col-s-10 {
+    width: 83.33%;
+}
+
+.col-s-11 {
+    width: 91.66%;
+}
+
+.col-s-12 {
+    width: 100%;
+}
+        /* Header*/
+        header>nav img {
+            display: none;
+        }
+    
+        header {
+            background-color: #242425;
+            height: 305px;
+    
+        nav ul {
+            float: none;
+            display: block;
+    
+            li {
+                font-size: 14px;
+                display: block;
+                border-bottom: 1px solid rgb(158, 151, 151);  
+            }
+        }
+    
+            a { 
+                padding: 5px 0;
+                line-height: 40px;
+                &:hover {
+                    display: none;
+                }
+            }
+        }
+    
+        /* Hero */
+        .hero {
+            background-image: url(https://images.unsplash.com/photo-1585346830536-3602fce5f1de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80);
+            width: 100%;
+            height: 50vh;
+            text-align: center; 
+            background-size: cover;
+            background-position: center;
+            overflow: hidden; 
+        }
+    
+        .slogan {
+            display: none;
+    }
+
+  /* Benefits */
+
+  .benefits .col {
+    margin: 35px 0 0px 0px;
+    height: 80px;
+    width: 100%;
+
+    i {
+        display: none;
+    }
+
+    h2 {
+        margin: 10px 60px;
+        text-transform: uppercase;
+        transition: none;
+        font-size: 16px; 
+        text-align: center;
+    }
+
+    p {
+       font-size: 14px;
+       text-align: center;
+    }
+}
+
+    .benefits .col-3:hover i {
+        display: none;
+    }
+
+    .benefits .col-3:hover h2 {
+        color: black;
+    }
+
+     /*galeria*/
+     .gallery-img {
+        height: 12vh;
+        width: 100%;
+
+    &:after {
+       display: none;
+    }
+    .layer {
+        display: none;
+    }
+}
+   /* section works */
+    .workers {
+        padding-top: 85px;
+        text-align: center;
+        margin: 0; 
+
+        h3 {
+            text-align: center;
+            padding: 0;
+            font-size: 18px;
+        }
+    }
+
+    .worker img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        margin-top: 40px;
+    }
+
+    .worker .layer {
+        display: none;
+    }
+
+    .layer h2 {
+        line-height: 40px;
+        letter-spacing: 0;
+        color: none;
+    }
+    .worker .photo-and-position:hover .layer {
+        opacity: none;
+    }
+
+/* sekcja awsome title*/
+.picture {
+    margin-top: 80px;
+    width: 100%;
+
+    background-color: #330033;
+}
+
+.picture .one img {
+    display: none;
+}
+
+.picture h1 {
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.picture .text p {
+    color: white;
+    padding: 15px 15px 5px 15px;
+    text-align: left;
+    margin: 10px;
+}
+
+/*stylowanie sekcji z liczbami*/
+
+.numbers>.row>.number-col>p {
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.numbers>.row>.number-col>.number {
+    font-size: 30px;
+
+}
+
+.numbers>.row>col-3 {
+    margin: 30px 0;
+}
+
+    /*stylizacja stopki*/
+    .foot {
+        margin-top: 20px;
+        padding: 20px 0 20px 0;
+        text-align: left;
+    }
+
+.about-us {
+    padding: 25px;
+}
+
+.get-in-touch > h1 {
+  margin-left: 25px;
+}
+
+    footer {
+        text-align: center;
+        background-color: #252726;
+        color: rgb(255, 255, 255);
+        margin: 0;
+        padding: 10px;
+    }
+
+    .foot .fa {
+        background-color: #04C4E9;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .social-media {
+        margin: 5px 25px 5px 25px;
+    }
+
+    .foot .get-in-touch p {
+        margin: 5px 25px 5px 25px;
+    }
+}
+
+    @media(min-width: 768px) and (max-width: 991px) {
+
+    }
+
+    @media(min-width: 992px) and (max-width: 1199px) {
+
     }
