@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
+/* variables */
+$fonts: 'Source Sans Pro', sans-serif;
+$colors-background: #313332;
+$footer-colors: #252726;
+$blue-details: #00c7e8;
+$benefits-color: rgb(170, 170, 170);
+$primary-colors-white: #ffff;
+$red-details: rgb(255, 0, 0);
+
+/* mixin */
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+/* start */
+  
 * {
     box-sizing: border-box;
 }
@@ -83,7 +102,7 @@ header>nav img {
 }
 
 header {
-    background-color: #242425;
+    background-color: $colors-background;
     height: 50px;
     margin: 0 auto;
     width: 100%;
@@ -106,13 +125,13 @@ header {
     a {
         line-height: 50px;
         display: inline-block;
-        color: #fff;
+        color: $primary-colors-white;
         padding: 0 20px;
         text-decoration: none;
         text-transform: uppercase;
 
         &:hover {
-            background: rgb(170, 170, 170);
+            background: $benefits-color;
             text-decoration: none;
         }
     }
@@ -129,7 +148,7 @@ header {
 
 .slogan {
     background-color: rgba(255, 247, 247, 0.726);
-    color: #fff;
+    color: $primary-colors-white;
     float: right;
     max-width: 550px;
     margin-top: 80px;
@@ -140,7 +159,7 @@ header {
     h1 {
         margin-left: 10px;
         margin-top: 8px;
-        color: rgb(32, 31, 31);
+        color: $colors-background;
         font-weight: 600;
         text-align: left;
         letter-spacing: 2px;
@@ -151,7 +170,7 @@ header {
     h2 {
         margin-left: 10px;
         margin-top: 8px;
-        color: rgb(36, 35, 35);
+        color: $colors-background;
         font-weight: 800;
         text-align: left;
         letter-spacing: 3px;
@@ -162,13 +181,13 @@ header {
 .benefits .col {
     margin: 80px 48px auto;
     text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $fonts;
 
     i {
         width: 125px;
-        background-color: #292929;
-        border-radius: 35px;
-        color: #fff;
+        background-color: $colors-background;
+        @include border-radius(35%);
+        color: $primary-colors-white;
         padding: 25px;
         transition: .35s ease-in-out;
     }
@@ -186,18 +205,18 @@ header {
 }
 
 .benefits .col-3:hover i {
-    background-color: rgb(170, 170, 170);
+    background-color: $benefits-color;
 }
 
 .benefits .col-3:hover h2 {
-    color: rgb(170, 170, 170);
+    color: $benefits-color;
 }
 
 /* text */
 .featured-works {
     margin: 80px auto;
     text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $fonts;
 
     h3 {
         font-size: 20px;
@@ -279,7 +298,7 @@ section.gallery .gallery-img:hover .layer {
 
 section.gallery .layer i {
     padding: 50px;
-    color: #fff;
+    color: $primary-colors-white;
     font-size: 35px;
     position: relative;
 }
@@ -287,7 +306,7 @@ section.gallery .layer i {
 /* section works */
 .workers {
     padding: 100px 20px 15px 30px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $fonts;
 
     h3 {
         text-align: center;
@@ -299,7 +318,7 @@ section.gallery .layer i {
 .worker img {
     width: 250px;
     height: 220px;
-    border-radius: 50%;
+    @include border-radius(50%);
 }
 
 .worker .layer {
@@ -308,7 +327,7 @@ section.gallery .layer i {
     height: 220px;
     border-radius: 50%;
     font-size: 16px;
-    color: rgb(243, 26, 26);
+    color: $red-details;
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -317,7 +336,7 @@ section.gallery .layer i {
     line-height: 180px;
     letter-spacing: 1px;
     text-align: center;
-    color: red;
+    color: $red-details;
 }
 
 .worker .photo-and-position:hover .layer {
@@ -333,7 +352,7 @@ section.gallery .layer i {
     // background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/6U6EAPKKD7.jpg);
     background-size: cover;
     background-position: center;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $fonts;
 }
 
 .picture .one img {
@@ -348,14 +367,14 @@ section.gallery .layer i {
 }
 
 .picture h1 {
-    color: white;
+    color: $primary-colors-white;
     letter-spacing: 2px;
     font-size: 34px;
     text-transform: uppercase;
 }
 
 .picture .text p {
-    color: white;
+    color: $primary-colors-white;
     padding-top: 15px;
     text-align: left;
     margin: 10px;
@@ -366,13 +385,13 @@ section.gallery .layer i {
     margin-top: 70px;
     text-transform: uppercase;
     text-align: center;
-    color: #00c7e8;
+    color: $blue-details;
     font-size: 20px;
     line-height: 0;
 }
 
 .numbers>.row>.number-col>.number {
-    color: black;
+    color: $colors-background;
     font-size: 60px;
     font-weight: 900;
     line-height: 0;
@@ -389,10 +408,10 @@ section.gallery .layer i {
 /*stylizacja stopki*/
 .foot {
     padding: 30px 0 30px 0;
-    background-color: rgb(49, 51, 50);
-    color: white;
+    background-color: $colors-background;
+    color: $primary-colors-white;
     text-align: left;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $fonts;
 }
 
 .about-us {
@@ -417,14 +436,14 @@ section.gallery .layer i {
 
 footer {
     text-align: center;
-    background-color: #252726;
-    color: white;
+    background-color: $footer-colors;
+    color: $primary-colors-white;
     margin: 0;
     padding: 10px;
 }
 
 .foot .fa {
-    background-color: #04C4E9;
+    background-color: $blue-details;
     width: 46px;
     height: 46px;
     line-height: 46px;
@@ -503,7 +522,6 @@ footer {
     }
 
     header {
-        background-color: #242425;
         height: 305px;
 
         nav ul {
@@ -605,7 +623,7 @@ footer {
     .worker img {
         width: 140px;
         height: 140px;
-        border-radius: 50%;
+        @include border-radius(50%);
         margin-top: 40px;
     }
 
@@ -627,8 +645,6 @@ footer {
     .picture {
         margin-top: 80px;
         width: 100%;
-
-        background-color: #330033;
     }
 
     .picture .one img {
@@ -637,14 +653,12 @@ footer {
 
     .picture h1 {
         text-align: center;
-        color: white;
         letter-spacing: 1px;
         font-size: 28px;
         text-transform: uppercase;
     }
 
     .picture .text p {
-        color: white;
         padding: 15px 15px 20px 15px;
         text-align: left;
         margin: 10px;
@@ -683,14 +697,11 @@ footer {
 
     footer {
         text-align: center;
-        background-color: #252726;
-        color: rgb(255, 255, 255);
         margin: 0;
         padding: 10px;
     }
 
     .foot .fa {
-        background-color: #04C4E9;
         width: 36px;
         height: 36px;
         line-height: 36px;
@@ -1003,7 +1014,6 @@ footer {
     }
 
     .picture .text p {
-        color: white;
         padding: 15px 15px 5px 15px;
         margin: 10px;
     }
